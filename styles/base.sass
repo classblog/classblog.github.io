@@ -68,8 +68,15 @@ nav
         background-color: #fff
 
 aside.content
-  display: flex
-  flex-wrap: wrap
+  padding: 10px
+  a
+    color: orange
+    text-decoration: none
+    &:hover
+      text-decoration: underline
+  &#home
+      display: flex
+      flex-wrap: wrap
   min-height: 100vh
   div
     &.post-full
