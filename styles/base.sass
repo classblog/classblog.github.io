@@ -1,0 +1,206 @@
+---
+---
+
+*
+  box-sizing: border-box
+
+img
+  max-width: 100%
+
+html
+  padding: 0
+  margin: 0
+
+body
+  padding: 0
+  margin: 0
+  background-image: #fff
+  font-family: Arial
+  font-size: 21px
+  width: 100%
+  overflow-x: hidden
+  background-color: #fff
+
+.container
+  max-width: 1100px
+  margin: 0 auto
+
+header 
+  box-shadow: 0 0 10px 5px rgba(0,0,0,0.3)
+  .slide
+    background-image: linear-gradient(to bottom, orange, rgba(255, 165, 0, 0.2)), url("../img/slides/1.jpg")
+    background-attachment: fixed
+    background-size: cover
+    background-position: 50% 50%
+    padding: 30vh 0
+    width: 100%
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    align-items: center
+    h1
+      padding: 2%
+      color: #fff
+
+nav
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  background-color: orange
+  ul
+    list-style-type: none
+    margin: 0
+    padding: 0
+    display: flex
+    flex-wrap: wrap
+    li
+      margin: auto
+      padding: 10px
+      display: flex
+      align-items: center
+      a
+        display: block
+        text-decoration: none
+        color: #000
+        font-weight: bold
+      &.current
+        background-color: #fff
+
+aside.content
+  display: flex
+  flex-wrap: wrap
+  min-height: 100vh
+  div
+    &.post-full
+      padding: 10px
+    &.post
+      box-shadow: 0 0 10px rgba(0,0,0,0.5)
+      align-items: center
+      justify-content: center
+      width: calc(33.3333% - 20px)
+      background-color: #eee
+      padding: 20px
+      margin: 20px 10px
+      border-radius: 20px
+      border: 4px orange solid
+      &:hover
+        box-shadow: 0 0 10px 5px rgba(0,0,0,0.3)
+      a
+        color: orange
+        text-decoration: none
+    &.post-full h1
+      color: orange
+      text-decoration: none
+    &.post
+      a
+        &:hover
+          text-decoration: underline
+          color: #ffbf00
+        h1
+          text-align: center
+          margin: 0
+          display: block
+      p
+        text-align: center
+        margin: 0
+        display: block
+    &.post-full
+      h1
+        margin: 0
+      p
+        margin: 0
+        display: block
+        display: flex
+    &.post ul.cats
+      list-style: none
+      display: flex
+      flex-wrap: wrap
+      justify-content: center
+      margin: 0
+      padding: 0
+    &.post-full ul.cats
+      display: flex
+      list-style: none
+      flex-wrap: wrap
+      margin: 0
+      padding: 0
+    &.post ul.cats li
+      background-color: orange
+      padding: 5px
+      border-radius: 10px
+      margin: 5px 0
+    &.post-full
+      ul.cats li
+        background-color: orange
+        padding: 5px
+        border-radius: 10px
+        margin: 5px 0
+      p
+        width: 100%
+        &.post-content
+          background-color: #eee
+      > ul
+        list-style: none
+        margin: 0
+        padding: 0
+        width: 100%
+        > li > a
+          text-decoration: none
+          color: orange
+
+footer
+  box-shadow: 0 0 10px rgba(0,0,0,0.5)
+  background-color: #eee
+  width: 100%
+  padding: 10px
+  .container
+    display: flex
+    flex-wrap: wrap
+    height: 100%
+    padding: 10px
+    p
+      width: 100%
+      margin: 0
+      padding: 0
+    h3
+      width: 100%
+      > a
+        text-decoration: none
+        color: orange
+    ul
+      list-style: none
+      margin: 0
+      padding: 10px 0
+      width: 100%
+      display: flex
+      flex-wrap: wrap
+      li
+        background-color: orange
+        display: block
+        padding: 6px
+        margin: 3px
+        border-radius: 10px
+        a
+          text-decoration: none
+          color: #333
+        &:hover
+          a, i
+            color: #eee
+        i, a
+          transition: all ease-in 0.3s
+
+@media screen and (max-width: 768px)
+  aside.content
+    > div img
+      height: 300px
+    div.post
+      width: 100%
+
+@media screen and (max-width: 560px)
+  aside.content > div img
+    width: 100%
+    padding: 10px 0
+    height: 300px
+  footer .container ul li
+    width: 100%

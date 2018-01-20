@@ -16,9 +16,8 @@
 title: "Блог 8-Б класу, Бучанської школи №4"
 email: igor_zash@live.com
 baseurl: "/" # the subpath of your site, e.g. /blog
-url: "igorzash.github.com/8blog" # the base hostname & protocol for your site, e.g. http://example.com
+url: "classblog.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username: igorzash
-permalink: /:year/:month/:day/:title
 
 # Build settings
 markdown: kramdown
