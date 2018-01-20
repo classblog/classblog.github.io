@@ -1,0 +1,33 @@
+---
+layout: default
+---
+
+<aside class="content container" id="content">
+	<div class="post-full">
+		<h1>{{ page.title }}</h1>
+		<ul>
+		<li>
+			Посилання:&nbsp;<a href="{{ page.url }}">{{ page.url }}</a>
+		</li>
+		<li>
+	    	Категорії:
+	    	<ul class="cats">
+	  			{% for category in page.categories %}
+	  				<li>{{ category }}</li>
+	  			{% endfor %}
+	  		</ul> 
+  		</li> 
+  		<li>
+      	Дата:
+      	{% if page.date %}
+      		{{page.date}}
+      	{% else %}
+      		Не вказано
+      	{% endif %}
+      	</li>
+      	</ul>
+		<p class="post-content">
+      		{{ page.content }}
+		</p>
+	</div>
+</aside>

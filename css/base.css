@@ -1,0 +1,260 @@
+* {
+     box-sizing: border-box;
+}
+
+img {
+     max-width: 100%;
+}
+
+html,
+body {
+     padding: 0;
+     margin: 0;
+}
+
+body {
+     background-image: #fff;
+     font-family: Arial;
+     font-size: 21px;
+     width: 100%;
+     overflow-x: hidden;
+     background-color: #fff;
+}
+
+.container {
+     max-width: 1100px;
+     margin: 0 auto;
+}
+
+header .slide {
+     background-image: linear-gradient(to bottom, orange, rgba(255, 165, 0, 0.2)), url("../img/slides/1.jpg");
+     background-attachment: fixed;
+     background-size: cover;
+     background-position: 50% 50%;
+     padding: 30vh 0;
+     width: 100%;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     align-items: center;
+}
+
+header .slide h1 {
+     padding: 2%;
+     color: #fff;
+}
+
+nav {
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     background-color: orange;
+}
+
+nav ul {
+     list-style-type: none;
+     margin: 0;
+     padding: 0;
+     display: flex;
+     flex-wrap: wrap;
+}
+
+nav ul li {
+     margin: auto;
+     padding: 10px;
+     display: flex;
+     align-items: center;
+}
+
+nav ul li a {
+     display: block;
+     text-decoration: none;
+     color: #000;
+     font-weight: bold;
+}
+
+nav ul li.current {
+     background-color: #fff;
+}
+
+
+aside.content {
+     display: flex;
+     flex-wrap: wrap;
+     min-height: 100vh;
+}
+
+aside.content div.post-full {
+     padding: 10px;
+}
+
+aside.content div.post {
+     align-items: center;
+     justify-content: center;
+     width: calc(33.3333% - 20px);
+     background-color: #eee;
+     padding: 20px;
+     margin: 20px 10px;
+     border-radius: 20px;
+     border: 4px orange solid;
+}
+
+aside.content div.post a,
+aside.content div.post-full h1 {
+     color: orange;
+     text-decoration: none;
+}
+
+aside.content div.post a:hover {
+     text-decoration: underline;
+     color: #ffbf00;
+}
+
+aside.content div.post a h1,
+aside.content div.post p {
+     text-align: center;
+     margin: 0;
+     display: block;
+}
+
+aside.content div.post-full h1 {
+     margin: 0;
+}
+
+aside.content div.post-full p {
+     margin: 0;
+     display: block;
+}
+
+aside.content div.post-full p {
+     display: flex;
+}
+
+aside.content div.post ul.cats {
+     list-style: none;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     margin: 0;
+     padding: 0;
+}
+
+aside.content div.post-full ul.cats {
+     display: flex;
+     list-style: none;
+     flex-wrap: wrap;
+     margin: 0;
+     padding: 0;
+}
+
+aside.content div.post ul.cats li,
+aside.content div.post-full ul.cats li {
+     background-color: orange;
+     padding: 5px;
+     border-radius: 10px;
+     margin: 5px 0;
+}
+
+aside.content div.post-full p {
+     width: 100%;
+}
+
+aside.content div.post-full > ul {
+     list-style: none;
+     margin: 0;
+     padding: 0;
+     width: 100%;
+}
+
+aside.content div.post-full > ul > li > a {
+     text-decoration: none;
+     color: orange;
+}
+
+aside.content div.post-full p.post-content {
+     background-color: #eee;
+}
+
+
+footer {
+     background-color: #eee;
+     width: 100%;
+}
+
+footer .container {
+     display: flex;
+     flex-wrap: wrap;
+     height: 100%;
+     padding: 10px;
+}
+
+footer .container p {
+     width: 100%;
+     margin: 0;
+     padding: 0;
+}
+
+footer .container h3 {
+     width: 100%;
+}
+
+footer .container h3 > a {
+     text-decoration: none;
+     color: orange;
+}
+
+footer .container ul {
+     list-style: none;
+     margin: 0;
+     padding: 10px;
+     width: 100%;
+     margin-left: 10px;
+     display: flex;
+     flex-wrap: wrap;
+}
+
+footer .container ul li {
+     background-color: orange;
+     display: block;
+     padding: 6px;
+     margin: 3px;
+     border-radius: 10px;
+}
+
+footer .container ul li a {
+     text-decoration: none;
+     color: #333;
+}
+
+footer .container ul li:hover a,
+footer .container ul li:hover i {
+     color: #eee;    
+}
+
+footer .container ul li i, footer .container ul li a {
+     transition: all ease-in 0.3s;
+}
+
+
+@media screen and (max-width: 768px) {
+     aside.content>div img {
+          height: 300px;
+     }
+
+     aside.content div.post {
+          width: 100%;
+     }
+}
+
+@media screen and (max-width: 560px) {
+     aside.content>div img {
+          width: 100%;
+          padding: 10px 0;
+          height: 300px;
+     }
+
+     footer .container ul li {
+          width: 100%;
+     }
+}

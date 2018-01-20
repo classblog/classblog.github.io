@@ -1,0 +1,35 @@
+---
+layout: default
+title: home
+---
+
+<header>
+   <div class="slide">
+      <h1 class="container">{{ site.title }}</h1>
+   </div>
+</header>
+
+<aside class="content container" id="content">
+  {% for post in site.posts %}
+    <div class="post">
+      <a href=".{{ post.url }}">
+      	<h1>{{ post.title }}</h1>
+      </a>
+      <p>
+      	Категорії:&nbsp;
+      	<ul class="cats">
+      		{% for category in post.categories %}
+      			<li>{{ category }}</li>
+      		{% endfor %}
+      	</ul>
+      </p>
+      <p>Дата:&nbsp;
+      	{% if post.date %}
+      		{{post.date}}
+      	{% else %}
+      		Не вказано
+      	{% endif %}
+      </p>
+    </div>
+  {% endfor %}
+</aside>
