@@ -1,0 +1,27 @@
+{% for post in paginator.posts %}
+  <div class="post">
+    <a href="{{ post.url }}">
+      <h1>{{ post.title }}</h1>
+    </a>
+    <p>
+    	Категорії:&nbsp;
+    	<ul class="cats">
+    		{% for category in post.categories %}
+    			<li>{{ category }}</li>
+    		{% endfor %}
+    	</ul>
+    </p>
+    <p>
+      Дата: {{ post.date | date: "%d/%m/%Y" }}
+    </p>
+  </div>
+{% endfor %}
+<div>
+  {% if paginator.previous_page_path %}
+    <a href="{{ paginator.previous_page_path }}">Попередня</a>
+  {% endif %}
+  Сторінка {{ paginator.page }} / {{ paginator.total_pages }}
+  {% if paginator.next_page_path %}
+    <a href="{{ paginator.next_page_path }}">Наступна</a>
+  {% endif %}
+</div>
