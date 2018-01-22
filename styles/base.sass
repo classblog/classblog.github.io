@@ -38,9 +38,11 @@ header
     flex-wrap: wrap
     justify-content: center
     align-items: center
+    display: flex
     h1
       padding: 2%
       color: #fff
+      text-align: center
 
 nav
   position: fixed
@@ -69,30 +71,56 @@ nav
 
 aside.content
   padding: 10px
+  min-height: 100vh
+  ul.navigation
+    list-style: none
+    margin: 0
+    padding: 0
+    display: flex
+    flex-wrap: wrap
+    height: 100vh
+    li
+      box-shadow: 0 0 10px rgba(0,0,0,0.5)
+      width: calc(50% - 20px)
+      display: flex
+      flex-wrap: wrap
+      align-items: center
+      justify-content: center
+      background-color: #eee
+      margin: 10px
+      a
+        font:
+          size: 30px
+          weight: bold
+        text-decoration: none
+        color: #333
+        transition: color 0.3s ease-in
+        &:hover
+          color: #888
+      i
+        width: 100%
+        font-size: 15vh
+        display: block
+        text-align: center
   a
     color: orange
     text-decoration: none
     &:hover
       text-decoration: underline
-  &#home
-      display: flex
-      flex-wrap: wrap
-  min-height: 100vh
   div
     &.post-full
       padding: 10px
     &.post
+      display: inline-block
       box-shadow: 0 0 10px rgba(0,0,0,0.5)
       align-items: center
       justify-content: center
-      width: calc(33.3333% - 20px)
+      width: calc(33.3333% - 40px)
       background-color: #eee
       padding: 20px
       margin: 20px 10px
       border-radius: 20px
-      border: 4px orange solid
-      &:hover
-        box-shadow: 0 0 10px 5px rgba(0,0,0,0.3)
+      border: 4px orange solid      
       a
         color: orange
         text-decoration: none
@@ -207,7 +235,7 @@ footer
     > div img
       height: 300px
     div.post
-      width: 100%
+      width: calc(100% - 20px)
 
 @media screen and (max-width: 560px)
   aside.content > div img
@@ -216,3 +244,5 @@ footer
     height: 300px
   footer .container ul li
     width: 100%
+  aside.content > ul.navigation > li
+      width: 100%

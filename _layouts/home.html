@@ -9,27 +9,10 @@ title: home
    </div>
 </header>
 
-<aside class="content container" id="home">
-  {% for post in site.posts %}
-    <div class="post">
-      <a href=".{{ post.url }}">
-        <h1>{{ post.title }}</h1>
-      </a>
-      <p>
-      	Категорії:&nbsp;
-      	<ul class="cats">
-      		{% for category in post.categories %}
-      			<li>{{ category }}</li>
-      		{% endfor %}
-      	</ul>
-      </p>
-      <p>Дата:&nbsp;
-      	{% if post.date %}
-      		{{post.date}}
-      	{% else %}
-      		Не вказано
-      	{% endif %}
-      </p>
-    </div>
-  {% endfor %}
+<aside class="content container">
+	<ul class="navigation">		
+		<li><a href="/feed"><i class="fa fa-newspaper-o"></i>Стрічка новин</a></li>
+		<li><a href="/cat"><i class="fa fa-list"></i>Мітки, категорії</a></li>
+		<li><a href="/about"><i class="fa fa-info"></i>Про блог</a></li>
+	</ul>
 </aside>
