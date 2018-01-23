@@ -77,13 +77,13 @@ aside.content {
     flex-wrap: wrap;
     height: 100vh; }
     aside.content ul.navigation li {
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
       width: calc(50% - 20px);
       display: flex;
       flex-wrap: wrap;
       align-items: center;
       justify-content: center;
-      background-color: #eee;
+      background-image: linear-gradient(to right bottom, #fff, orange);
       margin: 10px; }
       aside.content ul.navigation li a {
         font-size: 30px;
