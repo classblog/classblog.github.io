@@ -16,7 +16,7 @@
 title: "Блог 8-Б класу"
 description: "Бучанський НВК \"СЗОШ 1-3 ст. №4 - ЗОШ 1-3 ст.\" №4"
 email: igor_zash@live.com
-baseurl: "/" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "classblog.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username: igorzash
 paginate: 5
