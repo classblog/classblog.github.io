@@ -19,14 +19,18 @@ email: igor_zash@live.com
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "classblog.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username: igorzash
-paginate: 5
-paginate_path: "/feed/:num/"
+
+paginate_multiple:
+  - paginate: 5
+    paginate_path: '/feed/:num/'
+    sub_dir: ''
 
 # Build settings
 markdown: kramdown
 plugins:
   - jekyll-feed
   - jekyll-paginate
+  - jekyll-paginate-multiple
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

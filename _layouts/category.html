@@ -5,21 +5,6 @@ layout: default
 <aside class="content container">
 	<h1>#{{ page.tag }} ({{ site.categories[page.tag].size }} публікацій)</h1>
 	{% for post in site.categories[page.tag] %}
-		<div class="post">
-		    <a href="{{ post.url }}">
-		      <h1>{{ post.title }}</h1>
-		    </a>
-		    <p>
-		    	Категорії:&nbsp;
-		    	<ul class="cats">
-		    		{% for category in post.categories %}
-		    			<li>{{ category }}</li>
-		    		{% endfor %}
-		    	</ul>
-		    </p>
-		    <p>
-		      Дата: {{ post.date | date: "%d/%m/%Y" }}
-		    </p>
-		  </div>
+		{% include posts.html %}
 	{% endfor %}
 </aside>

@@ -19,12 +19,7 @@ comments: true
 	  		</ul> 
   		</li> 
   		<li>
-      	Дата:
-      	{% if page.date %}
-      		{{page.date}}
-      	{% else %}
-      		Не вказано
-      	{% endif %}
+      		Дата: {{ post.date | date: "%d/%m/%Y" }}
       	</li>
       	</ul>
 		<p class="post-content">
