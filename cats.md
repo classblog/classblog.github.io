@@ -1,7 +1,7 @@
 ---
-layout: page
 title: Категорії
-permalink: /cat/
+permalink: "/cat/"
+layout: page
 ---
 
 <aside class="content conteiner">
