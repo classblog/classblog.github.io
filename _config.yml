@@ -1,21 +1,4 @@
 title: Блог 8-Б класу
-timezone: Europe/Kiev
-collections:
-  category:
-    title: Category
-    output: true
-  posts:
-    title: Posts
-    output: true
-  uploads:
-    title: Uploads
-    output: true
-defaults:
-- scope:
-    path: ''
-    type: category
-- values:
-    layout: category
 description: Бучанський НВК "СЗОШ 1-3 ст. №4 - ЗОШ 1-3 ст." №4
 email: igor_zash@live.com
 baseurl: ''
