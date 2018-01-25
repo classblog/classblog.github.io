@@ -8,6 +8,8 @@ collections:
   uploads:
     title: Uploads
     output: true
+  category:
+    output: true
 description: Бучанський НВК "СЗОШ 1-3 ст. №4 - ЗОШ 1-3 ст." №4
 email: igor_zash@live.com
 baseurl: ''
@@ -15,3 +17,10 @@ url: classblog.github.io
 github_username: igorzash
 paginate: 9
 paginate_path: "/feed/:num"
+defaults:
+  -
+    scope:
+      path: ""
+      type: category
+    values:
+      layout: "category"
