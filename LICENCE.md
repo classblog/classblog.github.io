@@ -1,7 +1,7 @@
 ---
-layout: page
 title: Ліцензія
-permalink: /licence/
+permalink: "/licence/"
+layout: page
 ---
 
 ## Ліцензія MIT

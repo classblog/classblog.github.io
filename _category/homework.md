@@ -1,4 +1,7 @@
 ---
-tag: homework
-permalink: '/cat/homework/'
+title: Homework
+permalink: "/cat/homework/"
+tags:
+- homework
 ---
+

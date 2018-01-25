@@ -1,7 +1,7 @@
 ---
-layout: page
 title: Про блог
-permalink: /about/
+permalink: "/about/"
+layout: page
 ---
 
 # {{ site.title }}
