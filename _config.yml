@@ -1,15 +1,7 @@
 ---
 title: Блог 8-Б класу
-timezone: UTC
 collections:
   category:
-    title: Category
-    output: true
-  posts:
-    title: Posts
-    output: true
-  uploads:
-    title: Uploads
     output: true
 defaults:
 - scope:
