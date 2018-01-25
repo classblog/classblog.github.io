@@ -79,12 +79,12 @@ aside.content {
     aside.content ul.navigation li {
       background-image: linear-gradient(to right, orange, #fff);
       box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.2);
-      width: calc(33.33%);
+      width: calc(50% - 10px);
       display: flex;
       flex-wrap: wrap;
       align-items: center;
       justify-content: center;
-      margin: 20px 0; }
+      margin: 20px 5px; }
       aside.content ul.navigation li a {
         font-size: 30px;
         font-weight: bold;
