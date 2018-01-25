@@ -1,7 +1,6 @@
 ---
 title: Homework
 permalink: "/cat/homework/"
-tags:
-- homework
+tag: homework
 ---
 
