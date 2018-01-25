@@ -1,0 +1,15 @@
+{
+  "name": "classblog.github.io",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/classblog/classblog.github.io.git",
+  "author": "Igor <igor_zash@live.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.23.6",
+    "gulp": "^3.9.1"
+  },
+  "scripts": {
+    "sync": "gulp browser-sync"
+  }
+}
