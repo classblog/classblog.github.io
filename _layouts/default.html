@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html manifest="{{ page.layout }}.appcache">
 
 	{% include head.html %}
 
@@ -10,8 +10,9 @@
 			
 			{{ content }}
 
-			{% include footer.html %}
+			{% include footer.html %}			
 		</div>	
+
 	</body>
 
 </html>
