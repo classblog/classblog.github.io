@@ -7,6 +7,13 @@
 img
   max-width: 100%
 
+a
+  color: orange
+  text-decoration: none
+
+h1
+  text-align: center
+
 html
   padding: 0
   margin: 0
@@ -24,6 +31,16 @@ body
 .container
   max-width: 1100px
   margin: 0 auto
+
+.categories
+  ul
+    list-style: none
+    display: flex
+    flex-wrap: wrap
+    margin: 0
+    padding: 0
+    li
+      display: block
 
 header 
   box-shadow: 0 0 10px 5px rgba(0,0,0,0.3)
@@ -66,47 +83,35 @@ nav
         text-decoration: none
         color: #000
         font-weight: bold
-      &.current
-        background-color: #fff
-
+        &:hover
+          text-decoration: none
 aside.content
   padding: 10px
-  min-height: 60vh
-  ul.navigation
-    list-style: none
+  min-height: 100vh
+  .navigation
     margin: 0
-    padding: 0
+    padding: 10px
     display: flex
     flex-wrap: wrap
-    height: 100vh
-    li
-      background-image: linear-gradient(to right, orange, #fff)
-      box-shadow: 0 0 10px 3px rgba(0,0,0,0.2)
-      width: calc(50% - 10px)
+    background-color: #333
+    border-radius: 20px
+    a
       display: flex
       flex-wrap: wrap
+      width: 50%     
       align-items: center
-      justify-content: center
-      margin: 20px 5px
-      a
-        font:
-          size: 30px
-          weight: bold
-        text-decoration: none
-        color: #333
-        transition: color 0.3s ease-in
-        &:hover
-          color: #666
+      justify-content: center       
+      text-align: center
+      color: #eee
+      padding: 10px
+      font:
+        size: 30px
+        weight: bold      
       i
         width: 100%
         font-size: 15vh
         display: block
-        text-align: center
-  a
-    color: orange
-    text-decoration: none
-    &:hover
-      text-decoration: underline
+        color: orange
   div
     &.post-full
       padding: 10px
@@ -190,7 +195,6 @@ aside.content
             color: orange
 
 footer
-  min-height: 40vh
   box-shadow: 0 0 10px rgba(0,0,0,0.5)
   background-color: #eee
   width: 100%
@@ -245,5 +249,3 @@ footer
     height: 300px
   footer .container ul li
     width: 100%
-  aside.content > ul.navigation > li
-      width: 100%

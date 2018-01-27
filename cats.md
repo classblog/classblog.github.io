@@ -4,13 +4,14 @@ permalink: "/cat/"
 layout: page
 ---
 
-<aside class="content conteiner">
-	<h1>Мітки та категорії:</h1>
-	<ul>
-		<li>
+
+<div class="categories">
+	<h1>Хмара категорій:</h1>
+	<ul>		
 		{% for cat in site.categories %}
-			<a href="/cat/{{ cat[0] }}">#{{ cat[0] }}</a>
-		{% endfor %}
-		</li>
+			<li>
+				{% include categorypreview.html %}
+			</li>
+		{% endfor %}		
 	</ul>
-</aside>
+</div>
