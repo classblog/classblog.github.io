@@ -1,5 +1,6 @@
 * {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  word-break: normal; }
 
 img {
   max-width: 100%; }
@@ -93,6 +94,7 @@ aside.content {
     background-color: #333;
     border-radius: 20px; }
     aside.content .navigation a {
+      overflow: hidden;
       display: flex;
       flex-wrap: wrap;
       width: 50%;
@@ -101,7 +103,7 @@ aside.content {
       text-align: center;
       color: #eee;
       padding: 10px;
-      font-size: 30px;
+      font-size: 100%;
       font-weight: bold; }
       aside.content .navigation a i {
         width: 100%;

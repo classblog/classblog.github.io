@@ -4,6 +4,7 @@ permalink: "/cat/"
 layout: page
 ---
 
+
 <div class="categories">
 	<h1>Хмара категорій:</h1>
 	<ul>		
