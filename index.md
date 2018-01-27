@@ -1,9 +1,7 @@
 ---
-title: Головна
 layout: home
 ---
-
-<h1>Навігація по сайту</h1>
+<h1 class="center">Навігація по сайту</h1>
 <div class="navigation">		
 	<a href="/feed"><i class="fa fa-newspaper-o"></i>Стрічка новин</a>
 	<a href="/cat"><i class="fa fa-cloud"></i>Хмара категорій</a>

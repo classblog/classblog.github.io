@@ -7,9 +7,13 @@
   "license": "MIT",
   "devDependencies": {
     "browser-sync": "^2.23.6",
-    "gulp": "^3.9.1"
+    "csso": "^3.5.0",
+    "gulp": "^3.9.1",
+    "gulp-csso": "^3.0.1",
+    "gulp-sass": "^3.1.0"
   },
   "scripts": {
-    "sync": "gulp browser-sync"
+    "dev": "gulp browser-sync",
+    "csso": "gulp csso"
   }
 }

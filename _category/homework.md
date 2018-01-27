@@ -1,7 +1,6 @@
 ---
-title: Домашнє завдання
-permalink: "/cat/homework/"
+title: "Домашнє завдання"
 tags:
-- homework
+ - homework
+permalink: "/cat/homework/"
 ---
-
