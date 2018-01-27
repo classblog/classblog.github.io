@@ -1,1 +1,254 @@
-*{box-sizing:border-box;word-break:normal}img{max-width:100%}a,aside.content div.post a,aside.content div.post-full h1{color:orange;text-decoration:none}.center,header .slide h1{text-align:center}html{padding:0;margin:0}body,nav{width:100%}body{padding:0;margin:0;background-image:#fff;font-family:Arial;font-size:21px;overflow-x:hidden;background-color:#fff}.container{max-width:1100px;margin:0 auto}.categories ul{list-style:none;padding:0}.categories ul li,nav ul li a{display:block}header{box-shadow:0 0 10px 5px rgba(0,0,0,.3)}header .slide{background-image:linear-gradient(to bottom,orange,rgba(255,165,0,.2)),url(../img/slides/1.jpg);background-attachment:fixed;background-size:cover;background-position:50% 50%;padding:30vh 0;width:100%;flex-wrap:wrap;justify-content:center;align-items:center;display:flex}header .slide h1{padding:2%;color:#fff}nav{position:fixed;top:0;left:0;background-color:orange}.categories ul,aside.content .navigation,nav ul{margin:0;display:flex;flex-wrap:wrap}nav ul{list-style-type:none;padding:0}aside.content .navigation a,nav ul li{margin:auto;padding:10px;display:flex;align-items:center}nav ul li a{color:#000;font-weight:700}nav ul li a,nav ul li a:hover{text-decoration:none}aside.content{padding:10px;min-height:100vh}aside.content .navigation{background-color:#333;border-radius:20px}aside.content .navigation a{overflow:hidden;flex-wrap:wrap;width:50%;justify-content:center;text-align:center;color:#eee;padding:20px;margin:0;font-size:100%;font-weight:700;transition:background-color .3s ease-in}aside.content .navigation a:nth-last-child(2){border-radius:0 0 0 20px}aside.content .navigation a:nth-last-child(1){border-radius:0 0 20px 0}aside.content .navigation a:nth-child(1){border-radius:20px 0 0 0}aside.content .navigation a:nth-child(2){border-radius:0 20px 0 0}aside.content .navigation a:hover{background-color:#444}aside.content .navigation a i{width:100%;font-size:15vh;display:block;color:orange}aside.content div.post-full{padding:10px}aside.content div.post{display:inline-block;box-shadow:0 0 10px rgba(0,0,0,.5);align-items:center;justify-content:center;width:calc(33.3333% - 40px);background-color:#eee;padding:20px;margin:20px 10px;border-radius:20px;border:4px orange solid}aside.content div.post a:hover{text-decoration:underline;color:#ffbf00}aside.content div.post a h1,aside.content div.post p{text-align:center;margin:0;display:block}aside.content div.post-full{max-width:100vw;overflow-x:hidden}aside.content div.post-full h1{margin:0}aside.content div.post-full p{margin:0;display:block;display:flex;width:100%}aside.content div.post ul.cats{justify-content:center}aside.content div.post ul.cats,aside.content div.post-full ul.cats,footer .container ul{display:flex;list-style:none;flex-wrap:wrap;margin:0;padding:0}aside.content div.post ul.cats li,aside.content div.post-full ul.cats li,footer .container ul li{background-color:orange;padding:5px;border-radius:10px;margin:5px 0}aside.content div.post-full p.post-content,footer{background-color:#eee}aside.content div.post-full>ul{list-style:none;margin:0;padding:0;width:100%;overflow-x:auto}aside.content div.post-full>ul>li{width:fit-content}aside.content div.post-full>ul>li>a,footer .container h3>a{text-decoration:none;color:orange}footer{box-shadow:0 0 10px rgba(0,0,0,.5);padding:10px}footer .container{display:flex;flex-wrap:wrap;height:100%;padding:10px}footer .container p{width:100%;margin:0;padding:0}footer,footer .container h3{width:100%}footer .container ul{padding:10px 0;width:100%}footer .container ul li{display:block;padding:6px;margin:3px}footer .container ul li a{text-decoration:none;color:#333}footer .container ul li:hover a,footer .container ul li:hover i{color:#eee}footer .container ul li a,footer .container ul li i{transition:all ease-in .3s}@media screen and (max-width:768px){aside.content>div img{height:300px}aside.content div.post{width:calc(100% - 20px)}}@media screen and (max-width:560px){aside.content>div img{width:100%;padding:10px 0;height:300px}footer .container ul li{width:100%}}
+* {
+  box-sizing: border-box;
+  word-break: normal; }
+
+img {
+  max-width: 100%; }
+
+a {
+  color: orange;
+  text-decoration: none; }
+
+.center {
+  text-align: center; }
+
+html {
+  padding: 0;
+  margin: 0; }
+
+body {
+  padding: 0;
+  margin: 0;
+  background-image: #fff;
+  font-family: Arial;
+  font-size: 21px;
+  width: 100%;
+  overflow-x: hidden;
+  background-color: #fff; }
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto; }
+
+.categories ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0; }
+  .categories ul li {
+    display: block; }
+
+header {
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3); }
+  header .slide {
+    background-image: linear-gradient(to bottom, orange, rgba(255, 165, 0, 0.2)), url("../img/slides/1.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 50% 50%;
+    padding: 30vh 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    display: flex; }
+    header .slide h1 {
+      padding: 2%;
+      color: #fff;
+      text-align: center; }
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: orange; }
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap; }
+    nav ul li {
+      margin: auto;
+      padding: 10px;
+      display: flex;
+      align-items: center; }
+      nav ul li a {
+        display: block;
+        text-decoration: none;
+        color: #000;
+        font-weight: bold; }
+        nav ul li a:hover {
+          text-decoration: none; }
+
+aside.content {
+  padding: 10px;
+  min-height: 100vh; }
+  aside.content .navigation {
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #333;
+    border-radius: 20px; }
+    aside.content .navigation a {
+      overflow: hidden;
+      display: flex;
+      flex-wrap: wrap;
+      width: 50%;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #eee;
+      padding: 20px;
+      margin: 0;
+      font-size: 100%;
+      font-weight: bold;
+      transition: background-color 0.3s ease-in; }
+      aside.content .navigation a:nth-last-child(2) {
+        border-radius: 0 0 0 20px; }
+      aside.content .navigation a:nth-last-child(1) {
+        border-radius: 0 0 20px 0; }
+      aside.content .navigation a:nth-child(1) {
+        border-radius: 20px 0 0 0; }
+      aside.content .navigation a:nth-child(2) {
+        border-radius: 0 20px 0 0; }
+      aside.content .navigation a:hover {
+        background-color: #444; }
+      aside.content .navigation a i {
+        width: 100%;
+        font-size: 400%;
+        display: block;
+        color: orange; }
+  aside.content div.post-full {
+    padding: 10px; }
+  aside.content div.post {
+    display: inline-block;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: center;
+    width: calc(33.3333% - 40px);
+    background-color: #eee;
+    padding: 20px;
+    margin: 20px 10px;
+    border-radius: 20px;
+    border: 4px orange solid; }
+    aside.content div.post a {
+      color: orange;
+      text-decoration: none; }
+  aside.content div.post-full h1 {
+    color: orange;
+    text-decoration: none; }
+  aside.content div.post a:hover {
+    text-decoration: underline;
+    color: #ffbf00; }
+  aside.content div.post a h1 {
+    text-align: center;
+    margin: 0;
+    display: block; }
+  aside.content div.post p {
+    text-align: center;
+    margin: 0;
+    display: block; }
+  aside.content div.post-full {
+    max-width: 100vw;
+    overflow-x: hidden; }
+    aside.content div.post-full h1 {
+      margin: 0; }
+    aside.content div.post-full p {
+      margin: 0;
+      display: block;
+      display: flex; }
+  aside.content div.post ul.cats {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+    padding: 0; }
+  aside.content div.post-full ul.cats {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0; }
+  aside.content div.post ul.cats li {
+    background-color: orange;
+    padding: 5px;
+    border-radius: 10px;
+    margin: 5px 0; }
+  aside.content div.post-full ul.cats li {
+    background-color: orange;
+    padding: 5px;
+    border-radius: 10px;
+    margin: 5px 0; }
+  aside.content div.post-full p {
+    width: 100%; }
+    aside.content div.post-full p.post-content {
+      background-color: #eee; }
+  aside.content div.post-full > ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: auto; }
+    aside.content div.post-full > ul > li {
+      width: fit-content; }
+      aside.content div.post-full > ul > li > a {
+        text-decoration: none;
+        color: orange; }
+
+footer {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  background-color: #eee;
+  width: 100%;
+  padding: 10px; }
+  footer .container {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    padding: 10px; }
+    footer .container p {
+      width: 100%;
+      margin: 0;
+      padding: 0; }
+    footer .container h3 {
+      width: 100%; }
+      footer .container h3 > a {
+        text-decoration: none;
+        color: orange; }
+    footer .container ul {
+      list-style: none;
+      margin: 0;
+      padding: 10px 0;
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap; }
+      footer .container ul li {
+        background-color: orange;
+        display: block;
+        padding: 6px;
+        margin: 3px;
+        border-radius: 10px; }
+        footer .container ul li a {
+          text-decoration: none;
+          color: #333; }
+        footer .container ul li:hover a, footer .container ul li:hover i {
+          color: #eee; }
+        footer .container ul li i, footer .container ul li a {
+          transition: all ease-in 0.3s; }
+
+@media screen and (max-width: 768px) {
+  aside.content > div img {
+    height: 300px; }
+  aside.content div.post {
+    width: calc(100% - 20px); } }
+
+@media screen and (max-width: 560px) {
+  aside.content > div img {
+    width: 100%;
+    padding: 10px 0;
+    height: 300px; }
+  footer .container ul li {
+    width: 100%; } }
