@@ -1,7 +1,7 @@
 ---
 title: Архів
-layout: page
 permalink: "/archive/"
+layout: page
 ---
 
 <section class="archive">
