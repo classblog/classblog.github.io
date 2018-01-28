@@ -1,6 +1,7 @@
 ---
 layout: home
 ---
+
 <h1 class="center">Навігація по сайту</h1>
 <section class="navigation">		
 	<a href="/feed"><i class="fa fa-newspaper-o"></i>Стрічка новин</a>

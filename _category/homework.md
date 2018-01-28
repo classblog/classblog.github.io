@@ -1,6 +1,7 @@
 ---
-title: "Домашнє завдання"
-tags:
- - homework
+title: Домашнє завдання
 permalink: "/cat/homework/"
+tags:
+- homework
 ---
+
