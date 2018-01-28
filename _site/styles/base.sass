@@ -1,28 +1,8 @@
-*
-  box-sizing: border-box
-  word-break: normal
-
-img
-  max-width: 100%
-
-a
-  color: orange
-  text-decoration: none
-
-.center
-  text-align: center
+@import 'defaults.sass'
 
 html
   padding: 0
   margin: 0
-
-section.archive
-  ul
-    list-style: none
-    padding: 0
-    margin: 0
-    li
-      display: block
 
 body
   padding: 0
@@ -33,20 +13,6 @@ body
   overflow-x: hidden
   background-color: #444
   color: #eee
-
-.container
-  max-width: 1100px
-  margin: 0 auto
-
-.categories
-  ul
-    list-style: none
-    display: flex
-    flex-wrap: wrap
-    margin: 0
-    padding: 0
-    li
-      display: block
 
 header 
   box-shadow: 0 0 10px 5px rgba(0,0,0,0.3)
@@ -95,106 +61,16 @@ nav
 aside.content
   padding: 10px
   min-height: 100vh
-  .navigation
-    margin: 0    
-    display: flex
-    flex-wrap: wrap
-    background-color: #333
-    border-radius: 20px
-    a
-      overflow: hidden
-      display: flex
-      flex-wrap: wrap
-      width: 50%     
-      align-items: center
-      justify-content: center       
-      text-align: center
-      color: #eee
-      padding: 20px
-      margin: 0
-      font:
-        size: 100%
-        weight: bold
-      transition: all 0.2s ease-in
-      &:hover
-        background-color: #444
-      i
-        width: 100%
-        font-size: 400%
-        display: block
-        color: orange
-
-.post
-  background-color: #555
-  display: flex
-  flex-wrap: wrap
-  justify-content: center
-  align-items: center
-  margin: 10px
-  padding: 10px
-  width: calc(33.33% - 40px)
-  > *
-    width: 100%
-    margin: 0
-    padding: 0
-    text-align: center
-    list-style: none
-
-.post-full
-  > *
-    width: 100%
-  > ul
-    list-style: none
-    overflow-x: auto
-    margin: 0
-    padding: 0
-
-.posts
-  display: flex
-  flex-wrap: wrap
-  justify-content: center
 
 footer
   box-shadow: 0 0 10px rgba(0,0,0,0.5)
   background-color: #333
   width: 100%
-  padding: 10px
-  color: #ddd
-  .container
-    display: flex
-    flex-wrap: wrap
-    height: 100%
-    padding: 10px
-    p
-      width: 100%
-      margin: 0
-      padding: 0
-    h3
-      width: 100%
-      > a
-        text-decoration: none
-        color: orange
-    ul
-      list-style: none
-      margin: 0
-      padding: 10px 0
-      width: 100%
-      display: flex
-      flex-wrap: wrap
-      li
-        background-color: orange
-        display: block
-        padding: 6px
-        margin: 3px
-        border-radius: 10px
-        a
-          text-decoration: none
-          color: #333
-        &:hover
-          a, i
-            color: #eee
-        i, a
-          transition: all ease-in 0.3s
+  padding: 5px
+  display: flex
+  flex-wrap: wrap
+  justify-content: center
+  align-items: center
 
 @media screen and (max-width: 768px)
   aside.content
@@ -208,5 +84,3 @@ footer
     width: 100%
     padding: 10px 0
     height: 300px
-  footer .container ul li
-    width: 100%

@@ -1,8 +1,6 @@
-<div class="post">
-    <a href="{{ post.url }}">
-      <h1>{{ post.title }}</h1>
-    </a>
+<a href="{{ post.url }}" class="post">    
+    <h1>{{ post.title }}</h1>    
     <p>
       Дата: {{ post.date | date: "%d/%m/%Y" }}
     </p>
-</div>
+</a>

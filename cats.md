@@ -4,7 +4,8 @@ permalink: "/cat/"
 layout: page
 ---
 
-<div class="categories">
+
+<section class="categories-cloud">
 	<h1>Хмара категорій:</h1>
 	<ul>		
 		{% for cat in site.categories %}
@@ -13,4 +14,4 @@ layout: page
 			</li>
 		{% endfor %}		
 	</ul>
-</div>
+</section>

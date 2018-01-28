@@ -1,7 +1,7 @@
 ---
 title: Архів
-permalink: "/archive/"
 layout: page
+permalink: "/archive/"
 ---
 
 <section class="archive">

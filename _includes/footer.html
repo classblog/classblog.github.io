@@ -1,13 +1,17 @@
 <footer id="footer">
    <div class="container">    
-      <h3><a href="/">{{ site.title }}</a></h3>     
-      Контакти:
-      <ul>
-         <li><i class="fa fa-envelope"></i>&nbsp;Email: <a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-         <li><i class="fa fa-github"></i>&nbsp;Github: <a href="https://github.com/{{ site.github_username }}">{{ site.github_username }}</a></li>
-      </ul>
-      <p>
-      	&copy; 2018. Created by Igor Zachchelkin.
+      <h3 style="margin: 10px 0"><a href="/">{{ site.title }}</a></h3>
+      <h5 style="margin: 0; margin-bottom: 10px;">{{ site.description }}</h5>     
+      <section class="colored-list">
+         <a href="mailto:{{ site.email }}">
+            <i class="fa fa-envelope"></i>&nbsp;{{ site.email }}
+         </a>
+         <a href="https://github.com/{{ site.github_username }}">
+            <i class="fa fa-github"></i>&nbsp;{{ site.github_username }}
+         </a>
+      </section>
+      <p class="center">
+      	&copy; 2018. Created by Igor Zachchelkin. <a href="/licence/">MIT Licence</a>.
       </p>
       
    </div>
