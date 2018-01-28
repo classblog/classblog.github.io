@@ -3,7 +3,6 @@ title: Блог 8-Б класу
 timezone: UTC
 collections:
   category:
-    title: Category
     output: true
   posts:
     title: Posts
@@ -12,11 +11,12 @@ collections:
     title: Uploads
     output: true
 defaults:
-- scope:
-    path: ''
-    type: category
-  values:
-    layout: category
+  -
+    scope:
+      path: ""
+      type: category
+    values:
+      layout: "category"
 description: Бучанський НВК "СЗОШ 1-3 ст. №4 - ЗОШ 1-3 ст." №4
 email: igor_zash@live.com
 baseurl: ''
@@ -24,3 +24,22 @@ url: classblog.github.io
 github_username: igorzash
 paginate: 9
 paginate_path: "/feed/:num"
+exclude:
+  - node_modules
+  - gulpfile.js
+  - package.json
+  - yarn.lock
+  - Gemfile
+  - Gemfile.lock
+  - .gitignore
+jekyll-archives:
+  enabled:
+    - year
+    - month
+  layout: 'archive'
+  permalinks:
+    year: '/archive/:year/'
+    month: '/archive/:year/:month/'
+    day: '/archive/:year/:month/:day/'
+    tag: '/archive/tag/:name/'
+    category: '/archive/category/:name/'

@@ -1,5 +1,6 @@
 <a href="/cat/{{ cat[0] }}" style="
-	font-size: calc({{ cat[1].size }} / {{ site.posts.size }} * 10vw)
+	font-size: calc( ( {{ cat[1].size }} / {{ site.posts.size }} )
+		* 60px)
 ">
 	{{ cat[0] }}
 </a>

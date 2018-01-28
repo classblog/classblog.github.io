@@ -16,15 +16,22 @@ html {
   padding: 0;
   margin: 0; }
 
+section.archive ul {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+  section.archive ul li {
+    display: block; }
+
 body {
   padding: 0;
   margin: 0;
-  background-image: #fff;
   font-family: Arial;
   font-size: 21px;
   width: 100%;
   overflow-x: hidden;
-  background-color: #fff; }
+  background-color: #444;
+  color: #eee; }
 
 .container {
   max-width: 1100px;
@@ -105,15 +112,7 @@ aside.content {
       margin: 0;
       font-size: 100%;
       font-weight: bold;
-      transition: background-color 0.3s ease-in; }
-      aside.content .navigation a:nth-last-child(2) {
-        border-radius: 0 0 0 20px; }
-      aside.content .navigation a:nth-last-child(1) {
-        border-radius: 0 0 20px 0; }
-      aside.content .navigation a:nth-child(1) {
-        border-radius: 20px 0 0 0; }
-      aside.content .navigation a:nth-child(2) {
-        border-radius: 0 20px 0 0; }
+      transition: all 0.2s ease-in; }
       aside.content .navigation a:hover {
         background-color: #444; }
       aside.content .navigation a i {
@@ -121,89 +120,43 @@ aside.content {
         font-size: 400%;
         display: block;
         color: orange; }
-  aside.content div.post-full {
-    padding: 10px; }
-  aside.content div.post {
-    display: inline-block;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    align-items: center;
-    justify-content: center;
-    width: calc(33.3333% - 40px);
-    background-color: #eee;
-    padding: 20px;
-    margin: 20px 10px;
-    border-radius: 20px;
-    border: 4px orange solid; }
-    aside.content div.post a {
-      color: orange;
-      text-decoration: none; }
-  aside.content div.post-full h1 {
-    color: orange;
-    text-decoration: none; }
-  aside.content div.post a:hover {
-    text-decoration: underline;
-    color: #ffbf00; }
-  aside.content div.post a h1 {
-    text-align: center;
-    margin: 0;
-    display: block; }
-  aside.content div.post p {
-    text-align: center;
-    margin: 0;
-    display: block; }
-  aside.content div.post-full {
-    max-width: 100vw;
-    overflow-x: hidden; }
-    aside.content div.post-full h1 {
-      margin: 0; }
-    aside.content div.post-full p {
-      margin: 0;
-      display: block;
-      display: flex; }
-  aside.content div.post ul.cats {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 0;
-    padding: 0; }
-  aside.content div.post-full ul.cats {
-    display: flex;
-    list-style: none;
-    flex-wrap: wrap;
-    margin: 0;
-    padding: 0; }
-  aside.content div.post ul.cats li {
-    background-color: orange;
-    padding: 5px;
-    border-radius: 10px;
-    margin: 5px 0; }
-  aside.content div.post-full ul.cats li {
-    background-color: orange;
-    padding: 5px;
-    border-radius: 10px;
-    margin: 5px 0; }
-  aside.content div.post-full p {
-    width: 100%; }
-    aside.content div.post-full p.post-content {
-      background-color: #eee; }
-  aside.content div.post-full > ul {
-    list-style: none;
+
+.post {
+  background-color: #555;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  padding: 10px;
+  width: calc(33.33% - 40px); }
+  .post > * {
+    width: 100%;
     margin: 0;
     padding: 0;
-    width: 100%;
-    overflow-x: auto; }
-    aside.content div.post-full > ul > li {
-      width: fit-content; }
-      aside.content div.post-full > ul > li > a {
-        text-decoration: none;
-        color: orange; }
+    text-align: center;
+    list-style: none; }
+
+.post-full > * {
+  width: 100%; }
+
+.post-full > ul {
+  list-style: none;
+  overflow-x: auto;
+  margin: 0;
+  padding: 0; }
+
+.posts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
 
 footer {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  background-color: #eee;
+  background-color: #333;
   width: 100%;
-  padding: 10px; }
+  padding: 10px;
+  color: #ddd; }
   footer .container {
     display: flex;
     flex-wrap: wrap;

@@ -1,22 +1,20 @@
 ---
-layout: default
+layout: page
 ---
 
-<aside class="content container">
-	<h1>Публікації 
-		{% if page.type == 'category' %}
-			#{{ page.category }}
-		{% elsif page.type == 'year' %}
-			за {{ page.date | date: "%Y" }} рік
-		{% elsif page.type == 'month' %}
-			за {{ page.date | date: "%m/%Y" }}
-		{% elsif page.type == 'day' %}
-			за {{ page.date | date: "%d/%m/%Y" }}
-		{% endif %}
-	</h1>
-	<ul class="posts">
-	  {% for post in page.posts %}
-	    {% include postpreview.html %}
-	  {% endfor %}
-	</ul>
-</aside>
+<h1>Публікації 
+	{% if page.type == 'category' %}
+		#{{ page.category }}
+	{% elsif page.type == 'year' %}
+		за {{ page.date | date: "%Y" }} рік
+	{% elsif page.type == 'month' %}
+		за {{ page.date | date: "%m/%Y" }}
+	{% elsif page.type == 'day' %}
+		за {{ page.date | date: "%d/%m/%Y" }}
+	{% endif %}
+</h1>
+<ul class="posts">
+  {% for post in page.posts %}
+    {% include postpreview.html %}
+  {% endfor %}
+</ul>
