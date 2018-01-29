@@ -4,7 +4,9 @@ layout: default
 
 <aside class="content container">
 	<h1>Усі публікації у категорії {{ page.slug }} ({{ site.categories[page.slug].size }} публікацій)</h1>
-	{% for post in site.categories[page.slug] %}
-		{% include postpreview.html %}
-	{% endfor %} 
+	<div class="posts">
+		{% for post in site.categories[page.slug] %}
+			{% include postpreview.html %}
+		{% endfor %} 
+	</div>
 </aside>
