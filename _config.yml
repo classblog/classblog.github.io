@@ -1,6 +1,6 @@
 ---
 title: Блог 8-Б класу
-timezone: UTC
+timezone: Europe/Kiev
 collections:
   category:
     title: Category
@@ -19,7 +19,7 @@ defaults:
     layout: category
 description: Бучанський НВК "СЗОШ 1-3 ст. №4 - ЗОШ 1-3 ст." №4
 email: igor_zash@live.com
-baseurl: ''
+baseurl: 
 url: classblog.github.io
 github_username: igorzash
 paginate: 9
