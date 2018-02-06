@@ -1,6 +1,6 @@
+{% assign k = cat[1].size | times: 1.0 | divided_by: site.posts.size | times: 1.0 %}
+
 <a href="/cat/{{ cat[0] }}" style="
-	font-size: calc( ( {{ cat[1].size }} / {{ site.posts.size }} )
-		* 60px)
-">
-	{{ cat[0] }}
+	font-size: {% if k < 0.3 %}6vw{% else if k < 0.6 %}15vw{% else %}20vw{% endif %};">
+	#{{ cat[0] }}
 </a>
