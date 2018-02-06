@@ -2,7 +2,7 @@
 title: Карантин
 date: 2018-02-06 14:05:00 +02:00
 categories:
-- schoolnews
+- shkilni-novini
 ---
 
 Карантин у школі по 9 лютого, п'ятниця.
