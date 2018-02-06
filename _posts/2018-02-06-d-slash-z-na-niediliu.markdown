@@ -3,6 +3,7 @@ title: Д/З на неділю
 date: 2018-02-06 17:16:00 +02:00
 categories:
 - homework
+- for-a-week
 ---
 
 Понеділок
