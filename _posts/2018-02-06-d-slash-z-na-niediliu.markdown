@@ -1,9 +1,9 @@
 ---
-title: Д/З на неділю
+title: Д/З на тиждень
 date: 2018-02-06 17:16:00 +02:00
 categories:
 - homework
-- for-a-week
+- for_a_week
 ---
 
 Понеділок
