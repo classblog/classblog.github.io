@@ -1,6 +1,6 @@
 {% assign k = cat[1].size | times: 1.0 | divided_by: site.posts.size | times: 1.0 %}
 
 <a href="/cat/{{ cat[0] }}" style="
-	font-size: {% if k < 0.3 %}6vw{% else if k < 0.6 %}15vw{% else %}20vw{% endif %}; padding: 5px;">
+	font-size: {% if k < 0.3 %}120%{% else if k < 0.6 %}180%{% else %}360%{% endif %}; margin: 0.3%;">
 	#{{ cat[0] }}
 </a>

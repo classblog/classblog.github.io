@@ -2,6 +2,11 @@
   box-sizing: border-box
   word-break: normal
 
+hr
+  border-color: #444
+  box-shadow: 0 0 2px rgba(0,0,0,0.5)
+  margin: 10px 0
+
 img
   max-width: 100%
 
@@ -13,12 +18,21 @@ a
   text-align: center
 
 section.archive
-  ul
-    list-style: none
-    padding: 0
-    margin: 0
-    li
-      display: block
+  h1
+    width: fit-content
+    ul
+      height: 0
+      opacity: 0
+      list-style: none
+      padding: 0
+      margin: 0
+      transition: all 0.3s ease-in
+      li
+        display: block
+  h1
+    ul.opened
+      height: auto
+      opacity: 1
 
 section.categories-cloud
   ul
@@ -42,15 +56,17 @@ section.navigation
       flex-wrap: wrap
       width: 50%     
       align-items: center
-      justify-content: center       
-      text-align: center
+      justify-content: center
       color: #eee
-      padding: 20px
+      padding: 5%
       margin: 0
       font:
-        size: 100%
-        weight: bold
+        size: 90%
+        weight: bolder
+      max-width: 50%
+      overflow: hidden       
       transition: all 0.2s ease-in
+      text-align: center
       &:hover
         background-color: #444
       i

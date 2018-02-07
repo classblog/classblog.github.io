@@ -1,7 +1,16 @@
 <footer id="footer">
-   <div class="container">    
-      <h3 style="margin: 10px 0"><a href="/">{{ site.title }}</a></h3>
-      <h5 style="margin: 0; margin-bottom: 10px;">{{ site.description }}</h5>     
+   <div class="container">
+      <h2 style="margin: 10px 0"><a href="/">{{ site.title }}</a></h3>
+      <h5 style="margin: 0;">{{ site.description }}</h5>    
+      <hr>
+      <h2 style="margin: 10px 0; color: orange;">Категорії</h2>
+      <section class="categories-cloud" style="padding: 10px 0;">        
+         {% for cat in site.categories %}
+            {% include categorypreview.html %}     
+         {% endfor %}   
+      </section>
+      <hr>
+      <h2 style="margin: 10px 0; color: orange;">Контакти</h2>
       <section class="colored-list">
          <a href="mailto:{{ site.email }}">
             <i class="fa fa-envelope"></i>&nbsp;{{ site.email }}
@@ -10,6 +19,7 @@
             <i class="fa fa-github"></i>&nbsp;{{ site.github_username }}
          </a>
       </section>
+      <hr>
       <p class="center">
       	&copy; 2018. Created by Igor Zachchelkin. <a href="/licence/">MIT Licence</a>.
       </p>
