@@ -3,7 +3,7 @@ title: Д/З на тиждень
 date: 2018-02-06 17:16:00 +02:00
 categories:
 - homework
-- for_a_week
+- homework_for_a_week
 ---
 
 ### Понеділок
