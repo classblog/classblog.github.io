@@ -1,6 +1,8 @@
 ---
 title: Опитування
 date: 2018-02-12 20:27:00 +02:00
+categories:
+- news
 tags:
 - news
 ---
