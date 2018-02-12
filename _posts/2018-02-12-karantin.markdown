@@ -1,6 +1,8 @@
 ---
 title: Карантин
 date: 2018-02-12 20:34:00 +02:00
+categories:
+- news
 tags:
 - news
 ---
