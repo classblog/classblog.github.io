@@ -4,6 +4,7 @@ const browserSync = require('browser-sync').create();
 const reload      = browserSync.reload
 const sass        = require('gulp-sass')
 const csso        = require('gulp-csso')
+const autoprefixer = require('gulp-autoprefixer')
 
 const server_root = "./_site"
 
@@ -22,6 +23,10 @@ gulp.task('browser-sync', function() {
 gulp.task('sass', function() {
     return gulp.src("styles/*.sass")
         .pipe(sass())
+        .pipe(autoprefixer({
+            browsers: ['last 5 versions'],
+            cascade: false
+        }))
         .pipe(gulp.dest("styles"))
         .pipe(browserSync.stream())
 })
