@@ -1,5 +1,5 @@
 ---
-title: Д/З га середу
+title: Д/З на середу
 date: 2018-03-20 15:43:00 +02:00
 categories:
 - homework
