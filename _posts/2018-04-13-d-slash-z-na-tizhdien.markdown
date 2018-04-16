@@ -3,6 +3,7 @@ title: Д/З на тиждень
 date: 2018-04-13 15:31:00 +03:00
 categories:
 - homework
+- homework_for_a_week
 ---
 
 1. Геом - 671 673 686(а, б)
