@@ -3,6 +3,7 @@ title: Д/З на тиждень
 date: 2018-04-20 13:53:00 +03:00
 categories:
 - homework
+- homework_for_a_week
 ---
 
 1. Хімія - 41.4 (1-3)
