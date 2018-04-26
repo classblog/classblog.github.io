@@ -1,5 +1,5 @@
 ---
-title: Д/З на вівторок
+title: Д/З на п'ятницю
 date: 2018-04-26 14:40:00 +03:00
 categories:
 - homework
